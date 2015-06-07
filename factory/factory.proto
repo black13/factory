@@ -1,0 +1,24 @@
+package factory;
+
+message child1
+{
+	required string name = 1;
+}
+
+message child2
+{
+	required string name = 1;
+}
+
+
+message child3
+{
+	required string name = 1;
+}
+
+message doc
+{
+	repeated child1 children1 = 1;
+	repeated child2 children2 = 2;
+	repeated child3 children3 = 3;
+}

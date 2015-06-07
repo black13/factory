@@ -1,0 +1,9 @@
+
+
+// Some method that might need to create an instance
+SimpleBaseClass *someMethod (std::map<std::string,FactoryFunction> factoryFunctions,std::string type)
+{
+	void *ptr;
+	return factoryFunctions[type](NULL);
+}
+
